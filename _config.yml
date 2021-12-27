@@ -4,3 +4,13 @@ description: Music for your entertaining needs
 exclude: ["vendor", "CNAME", "Gemfile", "LICENSE", "README.md"]
 
 google_analytics: XXXXXXXXX
+
+social:
+  twitter:
+    id: AlPorterMusic
+  facebook:
+    id: AlPorterMusic
+  spotify:
+    id: AlPorterMusic
+  instagram:
+    id: AlPorterMusic
