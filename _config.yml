@@ -1,0 +1,6 @@
+title: Al Porter Music
+permalink: /:title
+description: Music for your entertaining needs
+exclude: ["vendor", "CNAME", "Gemfile", "LICENSE", "README.md"]
+
+google_analytics: XXXXXXXXX
