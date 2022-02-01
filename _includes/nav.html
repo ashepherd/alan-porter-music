@@ -20,9 +20,15 @@
           <a class="navbar-item" href="contact" data-config-id="contact">Contact</a>
         </div>
         <div class="navbar-end">
-          <a class="navbar-item" href="//instagram.com" target="_blank" data-config-id="instagram"><img alt="Instagram" src="images/instagram.webp" style="width: 22px; height: 22px; object-fit: cover;"></a>
-          <a class="navbar-item" href="//spotify.com" target="_blank" data-config-id="spotify"><img alt="Spotify" src="images/spotify.webp" style="width: 22px; height: 22px; object-fit: cover;"></a>
-          <a class="navbar-item" href="//facebook.com" target="_blank" data-config-id="facebook"><img alt="Facebook" src="images/facebook.webp" style="width: 22px; height: 22px; object-fit: cover;"></a>
+        {% if site.social.instagram.id != "#" %}
+          <a class="navbar-item" href="//instagram.com/{{ site.social.instagram.id }}" target="_blank" data-config-id="instagram"><img alt="Instagram" src="images/instagram.webp" style="width: 22px; height: 22px; object-fit: cover;"></a>
+        {% endif %}
+        {% if site.social.spotify.id != "#" %}
+          <a class="navbar-item" href="//spotify.com/{{ site.social.spotify.id }}" target="_blank" data-config-id="spotify"><img alt="Spotify" src="images/spotify.webp" style="width: 22px; height: 22px; object-fit: cover;"></a>
+        {% endif %}
+        {% if site.social.facebook.id != "#" %}
+          <a class="navbar-item" href="//facebook.com/{{ site.social.facebook.id }}" target="_blank" data-config-id="facebook"><img alt="Facebook" src="images/facebook.webp" style="width: 22px; height: 22px; object-fit: cover;"></a>
+        {% endif %}
         </div>
       </div>
     </div>
