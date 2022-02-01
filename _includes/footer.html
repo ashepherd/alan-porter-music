@@ -1,13 +1,13 @@
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
-    {% if site.social.instagram.id != "#" %}
+    {% if site.social.instagram.id %}
       <a class="navbar-item" href="//instagram.com/{{ site.social.instagram.id }}" target="_blank" data-config-id="instagram"><img class="mr-2" alt="Instagram" src="images/instagram.webp" style="width: 22px; height: 22px; object-fit: cover;">  @{{ site.social.instagram.id }}</a>
     {% endif %}
-    {% if site.social.spotify.id != "#" %}
+    {% if site.social.spotify.id %}
       <a class="navbar-item" href="//spotify.com/{{ site.social.spotify.id }}" target="_blank" data-config-id="spotify"><img class="mr-2" alt="Spotify" src="images/spotify.webp" style="width: 22px; height: 22px; object-fit: cover;"> {{ site.social.spotify.id }}</a>
     {% endif %}
-    {% if site.social.facebook.id != "#" %}
+    {% if site.social.facebook.id %}
       <a class="navbar-item" href="//facebook.com/{{ site.social.facebook.id }}" target="_blank" data-config-id="facebook"><img class="mr-2" alt="Facebook" src="images/facebook.webp" style="width: 22px; height: 22px; object-fit: cover;"> {{ site.social.facebook.id }}</a>
     {% endif %}
     </p>
