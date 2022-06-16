@@ -21,7 +21,7 @@
     {% endif %}
     {% assign url = site.url | append: page.url %}
     <meta property="og:url" content="{{ url }}" />
-    \
+
     {% if callout %}
       <meta name="description" content="{{ callout | strip }}"/>
       <meta property="og:description" content="{{ callout | strip }}" />
@@ -39,6 +39,7 @@
     {% endif %}
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/site.css">
   </head>
   <body>
     {% include nav.html %}
