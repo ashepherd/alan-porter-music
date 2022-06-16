@@ -2,7 +2,7 @@ title: Al Porter Music
 permalink: /:title
 description: Music for your entertaining needs
 exclude: ["vendor", "CNAME", "Gemfile", "LICENSE", "README.md"]
-
+url: https://ashepherd.github.io/alan-porter-music/
 google_analytics: XXXXXXXXX
 
 social:
