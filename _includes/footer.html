@@ -5,8 +5,11 @@
           <a class="navbar-item" href="contact" data-config-id="contact">Contact</a>
     </p>
     <p>
+    {% if site.social.venmo.id %}
+      <a class="navbar-item" href="//venmo.com/{{ site.social.venmo.id }}" target="_blank" data-config-id="venmo"><img class="mr-2" alt="Venmo - {{ site.social.venmo.id }}" src="images/venmo.webp" style="width: 22px; height: 22px; object-fit: cover;">  @{{ site.social.venmo.id }}</a>
+    {% endif %}
     {% if site.social.instagram.id %}
-      <a class="navbar-item" href="//instagram.com/{{ site.social.instagram.id }}" target="_blank" data-config-id="instagram"><img class="mr-2" alt="Instagram" src="images/instagram.webp" style="width: 22px; height: 22px; object-fit: cover;">  @{{ site.social.instagram.id }}</a>
+      <a class="navbar-item" href="//instagram.com/{{ site.social.instagram.id }}" target="_blank" data-config-id="instagram"><img class="mr-2" alt="Instagram - {{ site.social.instagram.id }}" src="images/instagram.webp" style="width: 22px; height: 22px; object-fit: cover;">  @{{ site.social.instagram.id }}</a>
     {% endif %}
     {% if site.social.spotify.playlist.id %}
       <a class="navbar-item" href="://open.spotify.com/playlist/{{ site.social.spotify.playlist.id }}" target="_blank" data-config-id="spotify"><img class="mr-2" alt="Spotify" src="images/spotify.webp" style="width: 22px; height: 22px; object-fit: cover;"> {{ site.social.spotify.id }}</a>
