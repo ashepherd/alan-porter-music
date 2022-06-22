@@ -11,7 +11,9 @@ social:
   facebook:
 #    id:
   spotify:
-    id: 21u5uFFquSrvAZO52lVTbE
+#    id:
+    playlist:
+      id: 21u5uFFquSrvAZO52lVTbE
   instagram:
     id: al_porter_music
   venmo:
