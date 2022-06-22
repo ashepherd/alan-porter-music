@@ -26,3 +26,7 @@
   width: 100%;
   height: 100%;
 }
+
+.blog.js-powrMark.pad-m.pad-top-l.powrMark.text-center {
+    display: none;
+}
