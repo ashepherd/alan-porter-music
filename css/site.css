@@ -27,6 +27,6 @@
   height: 100%;
 }
 
-.blog.js-powrMark.pad-m.pad-top-l.powrMark.text-center {
-    display: none;
+#appView .powrMark {
+    display: none !important;
 }
