@@ -30,20 +30,3 @@
 #appView .powrMark {
     display: none !important;
 }
-
-#contact-form table {
-    width: -webkit-fill-available;
-}
-
-#contact-form td.formlabel {
-    color: white;
-    font-size: larger;
-    font-weight: bold;
-}
-
-#contact-form textarea {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: -webkit-fill-available;
-}
