@@ -30,3 +30,13 @@
 #appView .powrMark {
     display: none !important;
 }
+
+#contact-form label {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#contact-form div {
+    display: block;	
+}
