@@ -3,10 +3,6 @@ function ready() {
     document.querySelector('#navbarHeader').classList.toggle('is-active');
     document.querySelector('#navbarHeaderBurger').classList.toggle('is-active');
   });
-  document.querySelector('div.powr-social-feed').addEventListener('change', (event) => {
-    console.log(event);
-  });
-  //document.querySelector('div.powr-social-feed iframe').style.height = "1px";
 }
 
 document.addEventListener("DOMContentLoaded", ready);
