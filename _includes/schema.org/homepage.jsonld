@@ -9,5 +9,9 @@
     "https://venmo.com/Al-Porter-Music",
     "https://instagram.com/al_porter_music"
   ],
+  "areaServed": {{ site.areaServed | jsonify }},
+  "email": {{ site.email | jsonify }},
+  "keywords: {{ site.keywords | jsonify }},
+  "logo": {{ site.url }}/images/logo.png",
   "url": "{{ site.url }}{{ page.url }}"
 }
