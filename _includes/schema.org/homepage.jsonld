@@ -12,7 +12,7 @@
   "areaServed": {{ site.areaServed | jsonify }},
   "email": {{ site.email | jsonify }},
   "keywords: {{ site.keywords | jsonify }},
-  "logo": {{ site.url }}/images/logo.png",
+  "logo": "{{ site.url }}/images/logo.png",
   "paymentAccepted": ["Cash", "Venmo"],
   "url": "{{ site.url }}{{ page.url }}"
 }
