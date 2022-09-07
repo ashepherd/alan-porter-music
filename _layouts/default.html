@@ -1,58 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="twitter:card" content="summary" />
-    {% if site.social.twitter.id != "#" %}
-      <meta name="twitter:site" content="@{{ site.social.twitter.id }}"/>
-    {% endif %}
-    <meta name="twitter:title" content="{{ page.title }}" />
-    <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:type" content="article" />
-    {% if page.description %}
-      {% assign callout = page.description %}
-    {% elsif page.excerpt %}
-      {% assign callout = page.excerpt | strip_html %}
-    {% else %}
-      {% assign callout = null %}
-    {% endif %}
-    {% assign url = site.url | append: page.url %}
-    <meta property="og:url" content="{{ url }}" />
-
-    {% if callout %}
-      <meta name="description" content="{{ callout | strip }}"/>
-      <meta property="og:description" content="{{ callout | strip }}" />
-      <meta name="twitter:description" content="{{ callout | strip }}"/>
-    {% endif %}
-    {% if page.images %}
-      {% for img in page.images %}
-        {% if img.primary %}
-          {% capture image_url %}{% include image_src.html image=img %}{% endcapture %}
-          <link rel="image_src" href="{{ image_url }}" />
-          <meta property="og:image" content="{{ image_url }}" />
-          <meta name="twitter:image" content="{{ image_url }}"/>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-    <title>{{ page.title }} | {{ site.title }}</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-    <link rel="stylesheet" href="css/site.css">
+    {% include header.html %}
   </head>
   <body>
     {% include nav.html %}
     <section class="section" style="background: url('images/homepage-background.jpg') no-repeat fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position-x: center;
     background-size: cover;">
-      <div class="container">
+      <div class="container mb-6">
         {{ content }}
       </div>
     </section>
