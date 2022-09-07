@@ -25,7 +25,7 @@
     "@context": {% include {{ context_file }} %},
     "@id": "{{ site.url }}{{ page.url }}",
     "@type": "ImageGallery",
-    "name": "{{ site.title }} Playlist",
+    "name": "Images of {{ site.title }}",
     "url": {{ site.url }}{{ page.url | jsonify }}
   } 
 {% else %}
