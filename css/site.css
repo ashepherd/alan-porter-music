@@ -1,3 +1,7 @@
+section.section {
+  padding: .5rem;	
+}
+
 #home-content {
 	background: url(/images/bg.webp) no-repeat center center fixed;
     -webkit-background-size: cover;
