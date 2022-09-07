@@ -30,3 +30,7 @@
 #appView .powrMark {
     display: none !important;
 }
+
+.card-image {
+  padding: 10px;	
+}
