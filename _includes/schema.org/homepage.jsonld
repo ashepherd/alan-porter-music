@@ -4,7 +4,7 @@
   {% endif %}
   "@type": ["LocalBusiness","MusicGroup", "WebPage"],
   "@id": "{{ site.url }}{{ page.url }}",
-  "name": {{ page.title | jsonify }},
+  "name": {{ site.title | jsonify }},
   "sameAs": [
     "https://venmo.com/Al-Porter-Music",
     "https://instagram.com/al_porter_music"
