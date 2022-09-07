@@ -7,7 +7,7 @@
     "@context": {% include {{ context_file }} %},
     "@id": "{{ site.url }}{{ page.url }}",
     "@type": "ContactPage",
-    "name": "{{ page.title | jsonify }}",
+    "name": {{ page.title | jsonify }},
     "url": "{{ site.url }}{{ page.url | jsonify }}"
   }
 {% elsif page.type == "playlist" %}
@@ -33,7 +33,7 @@
     "@context": {% include {{ context_file }} %},
     "@id": "{{ site.url }}{{ page.url }}",
     "@type": "WebPage",
-    "name": "{{ page.title | jsonify }}",
+    "name": {{ page.title | jsonify }},
     "url": "{{ site.url }}{{ page.url | jsonify }}"
   }
 {% endif %}
