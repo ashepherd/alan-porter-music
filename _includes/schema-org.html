@@ -7,8 +7,8 @@
     "@context": {% include {{ context_file }} %},
     "@id": "{{ site.url }}{{ page.url }}",
     "@type": "ContactPage",
-    "name": {{ page.title | jsonify }},
-    "url": {{ site.url }}{{ page.url | jsonify }}
+    "name": "{{ page.title | jsonify }}",
+    "url": "{{ site.url }}{{ page.url | jsonify }}"
   }
 {% elsif page.type == "playlist" %}
   {% assign description = page.description | default: "Songs in my repertoire that best represent my style and sound" %}
@@ -18,7 +18,7 @@
     "@type": "MusicPlaylist",
     "name": "{{ site.title }} Playlist",
     "description": {{ description | jsonify }},
-    "url": {{ site.url }}{{ page.url | jsonify }}
+    "url": "{{ site.url }}{{ page.url | jsonify }}"
   }  
 {% elsif page.type == "gallery" %}
   {
@@ -26,15 +26,15 @@
     "@id": "{{ site.url }}{{ page.url }}",
     "@type": "ImageGallery",
     "name": "Images of {{ site.title }}",
-    "url": {{ site.url }}{{ page.url | jsonify }}
+    "url": "{{ site.url }}{{ page.url | jsonify }}"
   } 
 {% else %}
   {
     "@context": {% include {{ context_file }} %},
     "@id": "{{ site.url }}{{ page.url }}",
     "@type": "WebPage",
-    "name": {{ page.title | jsonify }},
-    "url": {{ site.url }}{{ page.url | jsonify }}
+    "name": "{{ page.title | jsonify }}",
+    "url": "{{ site.url }}{{ page.url | jsonify }}"
   }
 {% endif %}
 </script>
