@@ -6,3 +6,11 @@ function ready() {
 }
 
 document.addEventListener("DOMContentLoaded", ready);
+
+function submitForm() {
+  var DefaultValue = "N/A"; 
+  if( document.contact.phone.value.length == 0 ) {
+    document.contact.phone.value = DefaultValue;
+  }
+  return true;
+}
