@@ -1,10 +1,10 @@
 {% assign context_file = "schema.org/context/default.jsonld" %}
 <script type="application/ld+json">
-{% if include.page.type == "homepage" %}
+{% if page.type == "homepage" %}
   {% include schema.org/homepage.jsonld context=context_file %}
-{% elsif include.page.type == "ItemList" %}
+{% elsif page.type == "ItemList" %}
   {% include schema.org/ItemList.jsonld context=context_file %}
-{% elsif include.page.type == "BlogPosting" %}
+{% elsif page.type == "BlogPosting" %}
   {% include schema.org/BlogPosting.jsonld context=context_file %}
 {% else %}
   {
