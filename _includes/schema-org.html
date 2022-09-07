@@ -1,18 +1,23 @@
 {% assign context_file = "schema.org/context/default.jsonld" %}
+{% assign page_type = "WebPage" %}
 <script type="application/ld+json">
 {% if page.type == "homepage" %}
   {% include schema.org/homepage.jsonld context=context_file %}
-{% elsif page.type == "ItemList" %}
-  {% include schema.org/ItemList.jsonld context=context_file %}
-{% elsif page.type == "BlogPosting" %}
-  {% include schema.org/BlogPosting.jsonld context=context_file %}
+{% elsif page.type == "contact" %}
+  {
+    "@context": {% include {{ context_file }} %},
+    "@id": "{{ site.url }}{{ page.url }}",
+    "@type": "ContactPage",
+    "name": {{ page.title | jsonify }},
+    "url": {{ site.url }}{{ page.url | jsonify }}
+  }
 {% else %}
   {
     "@context": {% include {{ context_file }} %},
     "@id": "{{ site.url }}{{ page.url }}",
     "@type": "WebPage",
     "name": {{ page.title | jsonify }},
-    "url": {{ page.url | jsonify }}
+    "url": {{ site.url }}{{ page.url | jsonify }}
   }
 {% endif %}
 </script>
