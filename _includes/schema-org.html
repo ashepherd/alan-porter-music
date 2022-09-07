@@ -10,7 +10,7 @@
     "name": {{ page.title | jsonify }},
     "url": {{ site.url }}{{ page.url | jsonify }}
   }
-{% elsif page.type == "listen" %}
+{% elsif page.type == "playlist" %}
   {% assign description = page.description | default: "Songs in my repertoire that best represent my style and sound" %}
   {
     "@context": {% include {{ context_file }} %},
