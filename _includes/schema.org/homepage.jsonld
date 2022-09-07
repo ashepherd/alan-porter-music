@@ -13,6 +13,7 @@
   "email": {{ site.email | jsonify }},
   "keywords": {{ site.keywords | jsonify }},
   "logo": "{{ site.url }}/images/logo.png",
+  "image": "{{ site.url }}/images/homepage-background.jpg",
   "paymentAccepted": ["Cash", "Venmo"],
   "url": "{{ site.url }}{{ page.url }}"
 }
