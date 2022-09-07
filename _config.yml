@@ -5,7 +5,8 @@ exclude: ["vendor", "CNAME", "Gemfile", "LICENSE", "README.md"]
 url: https://ashepherd.github.io/alan-porter-music
 areaServed: ["Cape Cod"]
 email: "alportermusic@gmail.com"
-keywords: ["guitar", "acoustic", "vocals"]
+keywords: ["guitar", "acoustic music", "vocals", "musician", "weddings", "restaurant", "party", "live music"]
+genre: ["Acoustic", "Singer/Songwriter", "Pop", "Rock"]
 
 google_analytics: XXXXXXXXX
 
