@@ -11,6 +11,24 @@
     "name": {{ page.title | jsonify }},
     "url": {{ site.url }}{{ page.url | jsonify }}
   }
+{% elsif page.type == "listen" %}
+  {% assign description = page.description | default: "Songs in my repertoire that best represent my style and sound" %}
+  {
+    "@context": {% include {{ context_file }} %},
+    "@id": "{{ site.url }}{{ page.url }}",
+    "@type": "MusicPlaylist",
+    "name": "{{ site.title }} Playlist",
+    "description": {{ description | jsonify }},
+    "url": {{ site.url }}{{ page.url | jsonify }}
+  }  
+{% elsif page.type == "gallery" %}
+  {
+    "@context": {% include {{ context_file }} %},
+    "@id": "{{ site.url }}{{ page.url }}",
+    "@type": "ImageGallery",
+    "name": "{{ site.title }} Playlist",
+    "url": {{ site.url }}{{ page.url | jsonify }}
+  } 
 {% else %}
   {
     "@context": {% include {{ context_file }} %},
