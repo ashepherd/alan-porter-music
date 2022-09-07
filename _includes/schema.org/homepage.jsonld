@@ -2,7 +2,7 @@
   {% if include.context %}
     "@context": {% include {{ include.context }} %},
   {% endif %}
-  "@type": ["LocalBusiness","MusicGroup"],
+  "@type": ["LocalBusiness","MusicGroup", "WebPage"],
   "@id": "{{ site.url }}{{ page.url }}",
   "name": {{ page.title | jsonify }},
   "sameAs": [
@@ -15,5 +15,37 @@
   "logo": "{{ site.url }}/images/logo.png",
   "image": "{{ site.url }}/images/homepage-background.jpg",
   "paymentAccepted": ["Cash", "Venmo"],
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement":[
+      {
+       "@type": "WebPage",
+       "position": 1,
+       "item":
+       {
+        "@id": "{{ site.url }}/contact",
+        "name": "Contact"
+        }
+      },
+      {
+       "@type": "ListItem",
+      "position": 2,
+      "item":
+       {
+         "@id": "{{ site.url }}/listen",
+         "name": "Listen"
+       }
+      },
+      {
+       "@type": "ListItem",
+      "position": 3,
+      "item":
+       {
+         "@id": "{{ site.url }}/gallery",
+         "name": "Gallery"
+       }
+      }
+    ]
+  },
   "url": "{{ site.url }}{{ page.url }}"
 }
