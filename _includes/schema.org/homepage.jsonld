@@ -12,6 +12,7 @@
   "areaServed": {{ site.areaServed | jsonify }},
   "email": {{ site.email | jsonify }},
   "keywords": {{ site.keywords | jsonify }},
+  "genre": {{ site.genre | jsonify }},
   "logo": "{{ site.url }}/images/logo.png",
   "image": "{{ site.url }}/images/homepage-background.jpg",
   "paymentAccepted": ["Cash", "Venmo"],
@@ -19,7 +20,7 @@
     "@type": "BreadcrumbList",
     "itemListElement":[
       {
-       "@type": "WebPage",
+       "@type": "ListItem",
        "position": 1,
        "item":
        {
